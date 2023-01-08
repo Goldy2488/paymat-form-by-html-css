@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+</head>
+<body bgcolor="#f5f5f5">
+   <form>
+    <h1><b><center><i>Payment Form</i></center></b></h1>
+    <fieldset>
+        <legend><b>Contact Information</b></legend>
+    <p><i><b>required field are *</b></i></p>
+    <fieldset>
+        <legend><b>Name</b></legend>
+        <p><b>First Name* </b> <input type="text" name="first name" placeholder="Goldy..." required></p>
+        <p><b>Last Name </b> <input type="text" name="Last name" placeholder="Gupta..."></p>
+    </fieldset>
+    <fieldset>
+        <legend><b>Gender *</b></legend>
+        <p>
+         <b>Male</b> <input type="radio" name="gender" id="male" required>
+        <b>Female</b><input type="radio" name="gender" id="female" required>
+        </p></fieldset>
+    <fieldset>
+            <legend><b>Location</b></legend>
+                <p><b>Address*: <textarea name="Address" id="Address" cols="130" rows="5" required></textarea></p>
+                <p><b>Pincode: </b> <input type="text" name="pincode" required></p>
+    </fieldset>
+    <p><b>Email*: </b><input type="email" name="email" placeholder="goldyg12@gmail.com" required ></p>
+    <fieldset>
+        <legend><b>Payment details</b></legend>
+            <p><b>Card type*: </b> 
+                <select name="card_type" id="card_type" required>
+                    <option values="" required>--Select a Card--</option>
+                    <option value="visa" required>visa</option>
+                    <option value="rupay" required>rupay</option>
+                    <option value="mastercard" required>mastercard</option>
+                </select></p>
+    <p><b>Card Number*: </b> <input type="number" name="card number" required></p>
+    <p><b>Expiration Date*: </b> <input type="date" name="Expiration Date" required></p>
+    <p><b>CVV*: </b><input type="password" name="CVV" required ></p></fieldset><br>
+    <input type="submit" class="submit" value="Pay Now" >
+    <input type="reset" class="reset">
+    </fieldset>
+
+   </form>
+</body>
+</html
